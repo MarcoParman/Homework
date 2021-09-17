@@ -4,3 +4,32 @@ if (rahakott >= tootehind)
 console.log(“Saad osta”);
   else
   console.log(“Ei saa osta”);
+  
+  // array [] lugemine algab nullist
+    // object []
+  
+let tahaTeada = prompt("Mis kuu?");   
+  let et = [10,12,15,12,13,15,11];  
+    let kuu =["Jan","Veb","Mar","Apr","Mai","Jun"]; 
+      console.log(kuu[]+" Tarbimine on "+et[tahaTeada-1]);
+  
+  console.log(et);  
+    if (tahaTeada == 1 )
+      kuu = "Jaanuar";
+      
+  Number on index, indement ehk i 
+  On olemas X ja Y teljed ka.
+    //for
+      //while
+      
+for(let i=1; i <= 100; i++){
+  console.log(i)
+}
+   ctrl+shift+ESC, et task manager lahti teha
+   
+   let x=1;
+   while(x <= 100) {
+    console.log(x)
+      if (new Date ().getHours > 8(
+        tööta = false;
+}

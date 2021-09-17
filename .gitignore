@@ -5,6 +5,10 @@ console.log(“Saad osta”);
   else
   console.log(“Ei saa osta”);
   
+  SELECT *FROM product WHERE name = ' tool '
+  SELECT * FROM product WHERE price > 20 AND price < 100
+  SELECT * FROM product WHERE name LIKE '% AND price < 100
+  
   // array [] lugemine algab nullist
     // object []
   
@@ -30,6 +34,8 @@ for(let i=1; i <= 100; i++){
    let x=1;
    while(x <= 100) {
     console.log(x)
-      if (new Date ().getHours > 8(
+      if (new Date().getMinutes() >= 27) {
         tööta = false;
+    }
+    sleep(10)
 }

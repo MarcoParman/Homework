@@ -9,6 +9,18 @@ console.log(“Saad osta”);
   SELECT * FROM product WHERE price > 20 AND price < 100
   SELECT * FROM product WHERE name LIKE '% AND price < 100
   
+  
+  let temp = 5;
+if (temp <= 20) {
+    console.log("Liiga külm");
+} else if (temp <= 40) {
+    console.log("OK");
+} else {
+    console.log("Liiga kuum");
+}
+
+
+  
   // array [] lugemine algab nullist
     // object []
   
@@ -39,3 +51,5 @@ for(let i=1; i <= 100; i++){
     }
     sleep(10)
 }
+
+

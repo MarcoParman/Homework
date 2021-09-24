@@ -80,6 +80,11 @@ list [2] // 3
 list [3] // null
 list [4] // [undentified]
 
+list.lenght // mitu elementi listis on
+// viimane element
+list-1    // undefined
+// eelviimane element
+list    // null
 //kuidas leida array sees element
 // tagastab kus positsioomil element arrays om
 // esimene number on positsioon/index
@@ -101,8 +106,9 @@ list.filter(elem => elem > 0) // 2,3
 //#region Create
 //#Region Read
 //#region Update
+
 fruits.push("kiwi")
 fruits[4] = "watermelon"
 list[4] = "not null"
-
+fruit[5-1]
 

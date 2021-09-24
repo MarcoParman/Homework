@@ -78,15 +78,15 @@ list [0] // "test"
 list [1] // 2
 list [2] // 3
 list [3] // null
-list [4] // [undentified]
+list [4] // [undefined]
 
 list.lenght // mitu elementi listis on
 // viimane element
-list-1    // undefined
+list-1  // undefined
 // eelviimane element
 list    // null
 //kuidas leida array sees element
-// tagastab kus positsioomil element arrays om
+// tagastab kus positsioonil element arrays om
 // esimene number on positsioon/index
 // teine number on mitu ära kustutada
 // kolmas, neljas, viies jne on mida element arrays on
@@ -101,7 +101,6 @@ list.filter(elem => elem > 0) // 2,3
 //#region read
 // Update
 // Delete
-
 // Array CRUD (list, massiiv, array)
 //#region Create
 //#Region Read

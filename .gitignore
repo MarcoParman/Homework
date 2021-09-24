@@ -73,56 +73,93 @@ let list = []
 let list = ["test",2,3,null]
 let fruits = ["orange","banana","apple"]
 
-// Read
-list [0] // "test"
-list [1] // 2
-list [2] // 3
-list [3] // null
-list [4] // [undefined]
+  // Read
+  list [0] // "test"
+  list [1] // 2
+  list [2] // 3
+  list [3] // null
+  list [4] // [undefined]
 
-list.lenght // mitu elementi listis on
-// viimane element
-list-1  // undefined
-// eelviimane element
-list    // null
-//kuidas leida array sees element
-// tagastab kus positsioonil element arrays om
-// esimene number on positsioon/index
-// teine number on mitu ära kustutada
-// kolmas, neljas, viies jne on mida element arrays on
-// -1 tähendab et ei ole arrays
+    list.lenght // mitu elementi listis on
+    // viimane element
+    list-1  // undefined
+    // eelviimane element
+    list    // null
+    //kuidas leida array sees element
+    // tagastab kus positsioonil element arrays om
+    // esimene number on positsioon/index
+    // teine number on mitu ära kustutada
+    // kolmas, neljas, viies jne on mida element arrays on
+    // -1 tähendab et ei ole arrays
 
-fruits.indexOf ("pear") // -1
-fruits.indexOf ("apple") // 2
+      fruits.indexOf ("pear") // -1
+      fruits.indexOf ("apple") // 2
 
-fruits.includes ("pear") // false
-list.filter(elem => elem > 0) // 2,3
+      fruits.includes ("pear") // false
+      list.filter(elem => elem > 0) // 2,3
 
 //#region read
-// Update
-// Delete
-// Array CRUD (list, massiiv, array)
-//#region Create
-//#Region Read
-//#region Update
+  // Update
+    // Delete
+  // Array CRUD (list, massiiv, array)
+    //#region Create
+      //#Region Read
+        //#region Update
 
-fruits.push("kiwi")
-fruits[4] = "watermelon"
-list[4] = "not null"
-fruit[5-1]
+    fruits.push("kiwi")
+      fruits[4] = "watermelon"
+      list[4] = "not null"
+      fruit[5-1]
 
-fruits.length-1
-fruits[8]
-fruits[8-6]
-a=8
-fruits[a]
+      fruits.length-1
+      fruits[8]
+      fruits[8-6]
+      a=8
+      fruits[a]
 
 fruits.pop()
 fruits.splice(2,1) // kustutab kolmanda elemendi
 
 4 + 6 +2
 (4+6) +2
-fruits[a].length
-(fruits.length-1
-fruits [  8  ]
+  fruits[a].length
+    (fruits.length-1
+        fruits [  8  ]
 
+
+DOM CRUD
+
+// Create
+let element = document.createElement("li"))
+  // Read
+  document.querySelector(".red") // <li class="red">
+    document.querySelectorAll(".red")
+
+    let element = document.createElement("li"))
+     document.body.append(document.createElement("li"))
+
+      let li = document.createElement("li")
+        li append("test")
+          document.body.append(li)
+    
+    <li class >"red" Crossroad Gardens, 88</11>
+      <li class"red green">Strawberry Mountaun Lands, 88<711>
+        <li class"green">keeping Willow Acres, 88</11>
+          <11>Tekst</11>
+    
+      
+      
+      
+              const offers=[["Crossroad Gardens","88"],["Strawberry Mountain Lands","57"],["Weeping Willow Acres","39"],["Pinewood Meadow","05"],["Broken Cart Orchard","31"],["Rattlesnake Ranch","47"],["Shadow Ridge Vineyard","96"],["Peach Tree Range","50"],["Elysian Orchard","19"],["Crown Meadow Fields","63"],["Mooseridge Meadow","40"],["Eastwood Orchard","90"],["Poison Ivy Gardens","48"],["Crescent Canyon Ranch","36"],["Cranberry Estate","41"],["Lone Pine Farm","49"],["Whispering Willow Range","82"],["Spring Blossom Ranch","66"],["Hollow Point Estate","27"],["Little Acorn Meadow","20"],["New Morning Pastures","79"],["Oak Wood Ranch","53"],["Crescent Canyon Orchard","56"],["Grassy Knoll Fields","07"],["Moonlight Gardens","73"],["Lucky Paws Estate","08"],["Crooked Creek Nursery","21"],["Small World Pastures","51"],["Crooked Creek Acres","45"],["Red Mountain Farmstead","78"],["Blueberry Basket Farms","60"],["Maple Springs Acres","54"],["Lucky Paws Farmstead","84"],["Wild Horse Pastures","55"]];
+      
+              console.log(offers[0][0])
+                console.log(offers[1][0])
+                  console.log(offers[0][1])
+                    console.log(offers[1][1])
+          
+            let li = document.createElement("li")
+            li append(offers[0][0])
+            document.body.append(11)
+          </scrip>
+          </body>
+          </html>

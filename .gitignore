@@ -79,6 +79,6 @@ list [1] // 2
 list [2] // 3
 list [3] // null
 list [4] // [undentified]
-fruits.index0f ("pear") // -1
-fruits.incldes ("pear") // false
-list.filter(elem => elem) > 0) // 2,3
+fruits.indexOf ("pear") // -1
+fruits.includes ("pear") // false
+list.filter(elem => elem > 0) // 2,3

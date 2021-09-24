@@ -79,6 +79,13 @@ list [1] // 2
 list [2] // 3
 list [3] // null
 list [4] // [undentified]
+
+//kuidas leida array sees element
+// tagastab kus positsioomil element arrays om
+// -1 tähendab et ei ole arrays
+
 fruits.indexOf ("pear") // -1
+fruits.indexOf ("apple") // 2
+
 fruits.includes ("pear") // false
 list.filter(elem => elem > 0) // 2,3

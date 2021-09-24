@@ -82,6 +82,9 @@ list [4] // [undentified]
 
 //kuidas leida array sees element
 // tagastab kus positsioomil element arrays om
+// esimene number on positsioon/index
+// teine number on mitu ära kustutada
+// kolmas, neljas, viies jne on mida element arrays on
 // -1 tähendab et ei ole arrays
 
 fruits.indexOf ("pear") // -1
@@ -89,3 +92,17 @@ fruits.indexOf ("apple") // 2
 
 fruits.includes ("pear") // false
 list.filter(elem => elem > 0) // 2,3
+
+//#region read
+// Update
+// Delete
+
+// Array CRUD (list, massiiv, array)
+//#region Create
+//#Region Read
+//#region Update
+fruits.push("kiwi")
+fruits[4] = "watermelon"
+list[4] = "not null"
+
+

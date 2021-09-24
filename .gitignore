@@ -111,3 +111,11 @@ fruits[4] = "watermelon"
 list[4] = "not null"
 fruit[5-1]
 
+fruits.length-1
+fruits[8]
+fruits[8-6]
+a=8
+fruits[a]
+
+fruits.pop()
+fruits.splice(2,1) // kustutab kolmanda elementi

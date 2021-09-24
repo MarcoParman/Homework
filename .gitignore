@@ -118,4 +118,11 @@ a=8
 fruits[a]
 
 fruits.pop()
-fruits.splice(2,1) // kustutab kolmanda elementi
+fruits.splice(2,1) // kustutab kolmanda elemendi
+
+4 + 6 +2
+(4+6) +2
+fruits[a].length
+(fruits.length-1
+fruits [  8  ]
+

@@ -62,7 +62,7 @@ const data = ["FWmcfgAWxe","KnFJXGcACq","cCYApSPiX0","iHwbq2giBx","X5Ebl6sjLf","
 function countCode(letter) {
   const countCode = data.filter((name
   ) => name.startsWith(leter));
-      return countCode,length;
+      return countCode.length;
 }
 
 

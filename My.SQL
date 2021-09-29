@@ -1,0 +1,105 @@
+CREATE TABLE `Group`(
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `name` INT NOT NULL
+);
+ALTER TABLE
+    `Group` ADD PRIMARY KEY `group_id_primary`(`id`);
+CREATE TABLE `Parent`(
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `first_name` INT NOT NULL,
+    `last_name` INT NOT NULL
+);
+ALTER TABLE
+    `Parent` ADD PRIMARY KEY `parent_id_primary`(`id`);
+CREATE TABLE `Payer`(
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `name` INT NOT NULL,
+    `paid` INT NOT NULL,
+    `number` INT NOT NULL,
+    `personal_code` INT NOT NULL,
+    `parent_id` INT NOT NULL,
+    `group_id` INT NOT NULL
+);
+ALTER TABLE
+    `Payer` ADD PRIMARY KEY `payer_id_primary`(`id`);
+CREATE TABLE `Contact`(
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `parent_id` INT NOT NULL,
+    `contact_type_id` INT NOT NULL,
+    `value` INT NOT NULL
+);
+ALTER TABLE
+    `Contact` ADD PRIMARY KEY `contact_id_primary`(`id`);
+CREATE TABLE `ContactType`(
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `name` INT NOT NULL
+);
+ALTER TABLE
+    `ContactType` ADD PRIMARY KEY `contacttype_id_primary`(`id`);
+CREATE TABLE `Payment`(
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `player_id` INT NOT NULL,
+    `amount` INT NOT NULL,
+    `date` INT NOT NULL
+);
+ALTER TABLE
+    `Payment` ADD PRIMARY KEY `payment_id_primary`(`id`);
+CREATE TABLE `Training`(
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `date` INT NOT NULL,
+    `description` INT NOT NULL,
+    `score` INT NOT NULL
+);
+ALTER TABLE
+    `Training` ADD PRIMARY KEY `training_id_primary`(`id`);
+CREATE TABLE `Attendace`(
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `player_id` INT NOT NULL,
+    `training_id` INT NOT NULL
+);
+ALTER TABLE
+    `Attendace` ADD PRIMARY KEY `attendace_id_primary`(`id`);
+CREATE TABLE `Test`(
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `player_id` INT NOT NULL,
+    `name` INT NOT NULL,
+    `desc` INT NOT NULL,
+    `date` INT NOT NULL,
+    `score` INT NOT NULL
+);
+ALTER TABLE
+    `Test` ADD PRIMARY KEY `test_id_primary`(`id`);
+CREATE TABLE `PlayerDetail`(
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `height` INT NOT NULL,
+    `player_id` INT NOT NULL
+);
+ALTER TABLE
+    `PlayerDetail` ADD PRIMARY KEY `playerdetail_id_primary`(`id`);
+CREATE TABLE `PlayerParent`(
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `player_id` INT NOT NULL,
+    `parent_id` INT NOT NULL
+);
+ALTER TABLE
+    `PlayerParent` ADD PRIMARY KEY `playerparent_id_primary`(`id`);
+ALTER TABLE
+    `Payer` ADD CONSTRAINT `payer_group_id_foreign` FOREIGN KEY(`group_id`) REFERENCES `Group`(`id`);
+ALTER TABLE
+    `Contact` ADD CONSTRAINT `contact_parent_id_foreign` FOREIGN KEY(`parent_id`) REFERENCES `Parent`(`id`);
+ALTER TABLE
+    `Contact` ADD CONSTRAINT `contact_contact_type_id_foreign` FOREIGN KEY(`contact_type_id`) REFERENCES `ContactType`(`id`);
+ALTER TABLE
+    `Payment` ADD CONSTRAINT `payment_player_id_foreign` FOREIGN KEY(`player_id`) REFERENCES `Payer`(`id`);
+ALTER TABLE
+    `Attendace` ADD CONSTRAINT `attendace_player_id_foreign` FOREIGN KEY(`player_id`) REFERENCES `Payer`(`id`);
+ALTER TABLE
+    `Attendace` ADD CONSTRAINT `attendace_training_id_foreign` FOREIGN KEY(`training_id`) REFERENCES `Training`(`id`);
+ALTER TABLE
+    `Test` ADD CONSTRAINT `test_player_id_foreign` FOREIGN KEY(`player_id`) REFERENCES `Payer`(`id`);
+ALTER TABLE
+    `PlayerDetail` ADD CONSTRAINT `playerdetail_height_foreign` FOREIGN KEY(`height`) REFERENCES `Payer`(`id`);
+ALTER TABLE
+    `PlayerParent` ADD CONSTRAINT `playerparent_player_id_foreign` FOREIGN KEY(`player_id`) REFERENCES `Payer`(`id`);
+ALTER TABLE
+    `PlayerParent` ADD CONSTRAINT `playerparent_parent_id_foreign` FOREIGN KEY(`parent_id`) REFERENCES `Parent`(`id`);
